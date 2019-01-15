@@ -1,0 +1,305 @@
+python-llxvars (0.9.51) bionic; urgency=medium
+
+  * First bionic release
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 28 May 2018 18:07:52 +0200
+
+python-llxvars (0.9.44) xenial; urgency=high
+
+  * Making sure cname file exists when executing postinst.
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 04 May 2017 09:23:23 +0200
+
+python-llxvars (0.9.43) xenial; urgency=high
+
+  * or True in dnsmasq restart
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 May 2017 11:38:34 +0200
+
+python-llxvars (0.9.42) xenial; urgency=high
+
+  * Cleaning postinst 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 May 2017 11:28:35 +0200
+
+python-llxvars (0.9.41) xenial; urgency=high
+
+  * Fixed echo in postinst
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Tue, 02 May 2017 13:59:09 +0200
+
+python-llxvars (0.9.40) xenial; urgency=high
+
+  * Added postinstall to check if alias is configured
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Tue, 02 May 2017 13:19:14 +0200
+
+python-llxvars (0.9.39) xenial; urgency=high
+
+  * Added admin-center to server alias
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Mon, 20 Mar 2017 12:15:17 +0100
+
+python-llxvars (0.9.38) xenial; urgency=high
+
+  * Trying to fix dependencies
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 26 Feb 2016 13:47:15 +0100
+
+python-llxvars (0.9.37) xenial; urgency=medium
+
+  * Copy trusty code to xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 03 Feb 2016 10:08:26 +0100
+
+python-llxvars (0.9.34) trusty; urgency=medium
+
+  * Rebuild functions from dhcp_first_ip.py, fixes wrong ranges when using subnetting
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 11 Dec 2015 08:47:31 +0100
+
+python-llxvars (0.9.33) trusty; urgency=high
+
+  *  Rebuild functions dhcp_last_ip.py
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 30 Jul 2015 10:24:42 +0200
+
+python-llxvars (0.9.32) trusty; urgency=medium
+
+  *  Add OPENSYSCLONE_SQUASH_PROTOCOL
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 30 Jul 2015 10:24:42 +0200
+
+python-llxvars (0.9.31) trusty; urgency=high
+
+  * New releases for LliureX 15.06
+
+ -- Alfons Lloret Sananton <turix13@gmail.com>  Wed, 01 Oct 2014 09:24:46 +0200
+
+python-llxvars (0.9.30) precise; urgency=high
+
+  * Added lliurexlab to srv_alias
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 04 Jun 2014 09:27:58 +0200
+
+python-llxvars (0.9.29) precise; urgency=high
+
+  * Add ipxeboot to srv_alias 
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 09 Apr 2014 12:27:49 +0200
+
+python-llxvars (0.9.28) precise; urgency=low
+
+  * added error alias to srv_alias 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 30 Oct 2013 11:54:02 +0100
+
+python-llxvars (0.9.26) precise; urgency=low
+
+  * Added Client exe server for n4d-client-exe-consumer
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 25 Oct 2013 09:38:16 +0200
+
+python-llxvars (0.9.25) precise; urgency=high
+
+  * Added Master_server_ip
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 12 Sep 2013 14:12:34 +0200
+
+python-llxvars (0.9.23) precise; urgency=low
+
+  * Added Ldap Replication vars
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Fri, 26 Jul 2013 10:50:08 +0200
+
+python-llxvars (0.9.22) precise; urgency=low
+
+  * Added ocfs2 vars 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 24 Jul 2013 13:55:36 +0200
+
+python-llxvars (0.9.21) precise; urgency=low
+
+  * UNRELEASED.
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 19 Jul 2013 08:22:20 +0200
+
+python-llxvars (0.9.20) precise; urgency=low
+
+  * Added jclic-aula to dns init list
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 19 Jul 2013 08:19:50 +0200
+
+python-llxvars (0.9.19) precise; urgency=low
+
+  * Removed some alias
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 20 Jun 2013 12:25:49 +0200
+
+python-llxvars (0.9.18) precise; urgency=low
+
+  * Fixed alias" 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 10 Jun 2013 12:59:13 +0200
+
+python-llxvars (0.9.17) precise; urgency=low
+
+  * Changed pmb alias 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 10 Jun 2013 10:25:50 +0200
+
+python-llxvars (0.9.16) precise; urgency=low
+
+  * UNRELEASED
+
+ -- Hector Garcia Huerta <cless@anubis.lliurex.fs>  Tue, 04 Jun 2013 12:04:01 +0200
+
+python-llxvars (0.9.15) precise; urgency=low
+
+  * Fixed Client variables initialization
+
+ -- Hector Garcia Huerta <cless@anubis.lliurex.fs>  Tue, 04 Jun 2013 12:01:43 +0200
+
+python-llxvars (0.9.14) precise; urgency=low
+
+  * Changed DNS_EXTERNAL type to list 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 27 May 2013 14:54:45 +0200
+
+python-llxvars (0.9.13) precise; urgency=low
+
+  * Added HTTP_PATH 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 07 May 2013 14:58:52 +0200
+
+python-llxvars (0.9.12) precise; urgency=low
+
+  * Added SRV_ALIAS variable 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 06 May 2013 11:22:29 +0200
+
+python-llxvars (0.9.11) precise; urgency=low
+
+  * UNRELEASED
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 May 2013 10:09:33 +0200
+
+python-llxvars (0.9.10) precise; urgency=low
+
+  * Added client internal iface init function
+  * Added remote variable server init function
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 May 2013 09:21:58 +0200
+
+python-llxvars (0.9.7) precise; urgency=low
+
+  * Changed srv_name arg name
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 23 Apr 2013 10:48:29 +0200
+
+python-llxvars (0.9.6) precise; urgency=low
+
+  * Fixed internal_domain
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Fri, 19 Apr 2013 12:34:15 +0200
+
+python-llxvars (0.9.5) precise; urgency=low
+
+  * Fixed identation
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 18 Apr 2013 09:36:57 +0200
+
+python-llxvars (0.9.4) precise; urgency=low
+
+  * Added external_interface function
+  * Refactor : Renamed int_domain to internal_domain
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 17 Apr 2013 19:11:25 +0200
+
+python-llxvars (0.9.3) precise; urgency=low
+
+  [ Raul Rodrigo Segura ]
+  * Changed method to calculate INTERNAL_NETWORK
+
+  [ Angel Berlanas Vicente ]
+  * Added epoptes_server.py to solve the epoptes question 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 17 Apr 2013 19:09:15 +0200
+
+python-llxvars (0.9.2) precise; urgency=low
+
+  * Added hostname as a new variable 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 17 Apr 2013 18:06:40 +0200
+
+python-llxvars (0.9.1) precise; urgency=low
+
+  * Updated version
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 17 Apr 2013 14:27:03 +0200
+
+python-llxvars (0.9) precise; urgency=low
+
+  [ David Montalva Furio ]
+  * Added proxy vars
+
+  [ Angel Berlanas Vicente ]
+  * Added srv_name var 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 17 Apr 2013 14:15:16 +0200
+
+python-llxvars (0.8) precise; urgency=low
+
+  * Change default value to internal_mask 
+  * Fix First and Last ip
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 26 Feb 2013 12:06:47 +0100
+
+python-llxvars (0.7) precise; urgency=low
+
+  * Added First and last ip calc
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 25 Feb 2013 12:04:34 +0100
+
+python-llxvars (0.6) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 13 Feb 2013 14:36:51 +0100
+
+python-llxvars (0.5) precise; urgency=low
+
+  * Added:
+     -  int_domain.py
+     -  internal_network.py
+     -  internal_mask.py
+     -  internal_interface.py
+     -  srv_ip.py
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Fri, 08 Feb 2013 14:40:09 +0100
+
+python-llxvars (0.4) precise; urgency=low
+
+  * Added the next values:
+  *   -  MIRROR_LAST_UPDATE
+  *   -  MIRROR_ENABLED  
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 08 Feb 2013 09:42:25 +0100
+
+python-llxvars (0.3) precise; urgency=low
+
+  * More methods
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 07 Feb 2013 18:07:50 +0100
+
+python-llxvars (0.2) precise; urgency=low
+
+  * Added varibles 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 07 Feb 2013 14:27:25 +0100
+
+python-llxvars (0.01) precise; urgency=low
+
+  * Initial release.
+
+ -- Hector Garcia Huerta <lliurex_devel1@edu.gva.es>  Mon, 23 Jul 2012 10:39:19 +0200

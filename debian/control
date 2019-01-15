@@ -1,0 +1,15 @@
+Source: python-llxvars
+Section: python
+Priority: standard
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Angel Berlanas Vicente <aberlanas.gva@gmail.com>, Javier García Escribano <garcia_javesc@gva.es>, Raul Rodrigo Segura <raurodse.gva@gmail.com>, Alfons Lloret Sananton <alloret.gva@gmail.com>, Enrique Medina Gremaldos <lth.gva@gmail.com>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>
+Build-Depends: debhelper (>= 8), python
+Standards-Version: 3.9.7
+
+Package: python-llxvars
+Architecture: all
+Pre-Depends: n4d
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, python-llxnet
+Description:  Lliurex variables library for python
+ Lliurex variables initialization library
+
