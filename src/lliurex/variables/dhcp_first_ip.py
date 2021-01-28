@@ -1,32 +1,32 @@
-from string import maketrans;
+#from string import maketrans;
 
 def init(args=None):
     DEBUG=0;
     try:
         network = args['NETWORK']
-	mask = args['MASK']
+        mask = args['MASK']
     except:
-	network = "10.10.0.30"
-	mask = 22
+        network = "10.10.0.30"
+        mask = 22
     
     global tpc_reserv;
     try:
-	tpc_reserv = args['RESERVATION']
+        tpc_reserv = args['RESERVATION']
     except:
-	tpc_reserv = 5;
+        tpc_reserv = 5;
     
 
     # pasamos ip -> binario
     netbinary=to_bin(network);
     # mas alla de la mascara, sustituimos por 0's
-    netbinary=netbinary[:mask]+netbinary[mask:].translate(maketrans('1','0'));
+    netbinary=netbinary[:mask]+netbinary[mask:].translate(str.maketrans('1','0'));
     # generamos wildcard como 0's y mas alla de la mascara 1's
     wildcard='';
     for i in range(mask,32):
-	wildcard+='1';
+        wildcard+='1';
     wildcard=wildcard.zfill(32);
     # para generar binario de la mascara, invertimos wildcard
-    maskbinary=wildcard.translate(maketrans('10','01'));
+    maskbinary=wildcard.translate(str.maketrans('10','01'));
     # calculamos numero maximo de host en la red como el valor del numero (binario) de la mascara -2 host (dir red, dir broadcast)
     total_hosts=int(wildcard,2)+1-2;
     # calculo de direcciones reservadas en funcion del size de la red
@@ -41,13 +41,13 @@ def init(args=None):
     last_host=bin(int(broadcast,2)-1)[2:].zfill(32);
     
     if DEBUG:
-	print '{0:25s} {1:20s}'.format('Address/Mask: ',network+'/'+str(mask))
-        print '{0:25s} {1:20s}'.format('Num Hosts: ',str(num_hosts)+' + Reservas:('+str(reservas)+') = TOTAL:'+str(total_hosts))
-        print '{0:25s} {1:20s}/{2:35s} {3:20}'.format('Network/Mask (binary):',netbinary,maskbinary,to_ip(netbinary)+'/'+str(mask))
-        print '{0:25s} {1:20s} {2:35s}'.format('Wildcard     (binary/ip):',wildcard,to_ip(wildcard))
-        print '{0:25s} {1:20s} {2:35s}'.format('First Host   (binary/ip):',first_host,to_ip(first_host))
-        print '{0:25s} {1:20s} {2:35s}'.format('Last Host    (binary/ip):',last_host,to_ip(last_host))    
-        print '{0:25s} {1:20s} {2:35s}'.format('Broadcast    (binary/ip):',broadcast,to_ip(broadcast))
+        print ('{0:25s} {1:20s}'.format('Address/Mask: ',network+'/'+str(mask)))
+        print ('{0:25s} {1:20s}'.format('Num Hosts: ',str(num_hosts)+' + Reservas:('+str(reservas)+') = TOTAL:'+str(total_hosts)))
+        print ('{0:25s} {1:20s}/{2:35s} {3:20}'.format('Network/Mask (binary):',netbinary,maskbinary,to_ip(netbinary)+'/'+str(mask)))
+        print ('{0:25s} {1:20s} {2:35s}'.format('Wildcard     (binary/ip):',wildcard,to_ip(wildcard)))
+        print ('{0:25s} {1:20s} {2:35s}'.format('First Host   (binary/ip):',first_host,to_ip(first_host)))
+        print ('{0:25s} {1:20s} {2:35s}'.format('Last Host    (binary/ip):',last_host,to_ip(last_host)))   
+        print ('{0:25s} {1:20s} {2:35s}'.format('Broadcast    (binary/ip):',broadcast,to_ip(broadcast)))
 
     return to_ip(first_host)
 #def init
@@ -60,7 +60,7 @@ def to_bin(ip):
     net_tuple=ip.split('.');
     ipbin='';
     for i in range(0,4):
-	ipbin += str(bin(int(net_tuple[i])))[2:].zfill(8);
+        ipbin += str(bin(int(net_tuple[i])))[2:].zfill(8);
     return ipbin;
 #def to_bin
 
